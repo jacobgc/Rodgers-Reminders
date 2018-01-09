@@ -3,10 +3,20 @@
 ## Evaluating the computing and business needs of Rodgers Reminders
 
 ### The services the organisation provides
+The Rodgers Reminders IOS application is being created to fill a gap in the market for a decent reminders, application. Many applications do some features and then other applications do others. This app is going to encompus them all within one application. Below is a basic list of some of the features that this IOS Application will include.
+
+Key = (Tick = Easy feature to implement, No Tick = Hard feature to implement)
+- [ ] Login System (Username/Password, Social login, Active directory login (Enterprise use))
+- [x] Reminders (Goal based, time based)
+- [x] Calander events
+- [X] Alerts via notification and email
+- [X] Native application (not web based)
 
 ### The Aims and goals of the organisation
+The aim of of the organisation is to create a final solution for reminder applications, hopfully this application will include every feature that users needs. The application will include a feature request form that will allow users to request features that they require.
 
 ### The customers needs, expectations and how the app will be delivered
+The customer requires a very well built IOS application that gives the ability for reminders to be created howevewr a user wants and to be able to notify the user if so required. The app will be delivered using a continuous integration system that will allow updates to be pushed automatically to the end user every week. This will allow the client to not need to worry about updates as it will be handled by the CI system.
 
 ### The staff's needs, working styles and patterns
 
@@ -30,7 +40,7 @@
 
 ### The time scales and milestones
 
-### The disks and constraints
+### The risks and constraints
 
 ### Recomendations for furure action
 
