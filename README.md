@@ -48,11 +48,11 @@ Inputs | Outputs | Processes
 Login details|account details sent to client|Hashing password
 New feature requests|Reminders sent to client|Sending emails
 New reminders|App notifications|Sending app notifications
-|Email notifications|Adding a new reminder
-||Removing reminder
-||Checking if a notification needs to be sent
-||Email verification
-||Password reset
+.|Email notifications|Adding a new reminder
+.|.|Removing reminder
+.|.|Checking if a notification needs to be sent
+.|.|Email verification
+.|.|Password reset
 ### The timescales and milestones
 
 ### The risks and constraints
