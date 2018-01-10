@@ -67,7 +67,7 @@ There are risks when developing an application. THe biggest risk is there not be
 ?
 
 ## Emailing "Mia Notte" to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.
-![Email to Rodgers Reminders](https://octodex.github.com/images/yaktocat.png)
+![Email to Rodgers Reminders](https://image.ibb.co/kBSYhR/Capture.png)
 
 ## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
 Document analysis is the process of using pre-defined protocols ad methods to analyse a document and extract useful data from it. It allows researchers to look at pre-existing documents, online or physical to determain certain factors. For Rodgers Reminders a document analysis can be conduced on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
