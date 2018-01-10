@@ -39,16 +39,20 @@ The staff will all require different skills depending on which team they are in.
 ### Change management and user involvement in the development process
 ?
 ## Requirements specification regarding the IOS app
-
+?
 ### The scope and boundaries of the proposed IOS application
 ?
 ### The inputs, outputs and processes of the proposed system
 Inputs | Outputs | Processes
 ------------ | ------------- | -------------
-Login details|account details sent to client|
-New feature requests|Reminders sent to client|3
-New reminders|App notifications|3
-|Email notifications|
+Login details|account details sent to client|Hashing password
+New feature requests|Reminders sent to client|Sending emails
+New reminders|App notifications|Sending app notifications
+|Email notifications|Adding a new reminder
+||Removing reminder
+||Checking if a notification needs to be sent
+||Email verification
+||Password reset
 ### The timescales and milestones
 
 ### The risks and constraints
