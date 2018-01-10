@@ -38,10 +38,13 @@ The staff will all require different skills depending on which team they are in.
 
 ### Change management and user involvement in the development process
 ?
+
 ## Requirements specification regarding the IOS app
 ?
+
 ### The scope and boundaries of the proposed IOS application
 ?
+
 ### The inputs, outputs and processes of the proposed system
 Inputs | Outputs | Processes
 ------------ | ------------- | -------------
@@ -53,18 +56,25 @@ New reminders|App notifications|Sending app notifications
 .|.|Checking if a notification needs to be sent
 .|.|Email verification
 .|.|Password reset
+
 ### The timescales and milestones
 Timescales and milestones can be setup within this github repository which will add a date to an issue informing everyone that it needs to be resolved by X date. Github can also setup milestones where you have a checklist of things that needs to be done before the milestone is complte and it will also show you how long you have until the milestone should be coplete.
+
 ### The risks and constraints
+There are risks when developing an application. THe biggest risk is there not being enough funding to sustane development. THis can be mitigated against by planning out the development so that each feature has a budget and timescale. Some constraints of application development is the fact that if one team falls behind on their work, it will cause other teams relying on that work to also fall behind. This costs time and a lot of money.
 
 ### Recomendations for furure action
+?
 
 ## Emailing "Mia Notte" to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.
+![Email to Rodgers Reminders](https://octodex.github.com/images/yaktocat.png)
 
 ## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
+Document analysis is the process of using pre-defined protocols ad methods to analyse a document and extract useful data from it. It allows researchers to look at pre-existing documents, online or physical to determain certain factors. For Rodgers Reminders a document analysis can be conduced on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
 
 ## Creating a questionnaire to take to the meeting to ensure that all information that is required, is gathered.
-
+I have created a form which will be printed off and brought with me to the meeting to ensure that the requirements specification is just how the customer (Rodgers Reminders) wants it.
+![Google Form](https://goo.gl/forms/fLs7G42uaT2O680n1)
 ## Keeping a record of all correspondence and meetings and update the requirements specification in light of the discussions
 
 ## Evaluating my requirements specifications to show how it fulfils the requirements for the IOS application.
