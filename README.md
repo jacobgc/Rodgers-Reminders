@@ -54,7 +54,7 @@ New reminders|App notifications|Sending app notifications
 .|.|Email verification
 .|.|Password reset
 ### The timescales and milestones
-
+Timescales and milestones can be setup within this github repository which will add a date to an issue informing everyone that it needs to be resolved by X date. Github can also setup milestones where you have a checklist of things that needs to be done before the milestone is complte and it will also show you how long you have until the milestone should be coplete.
 ### The risks and constraints
 
 ### Recomendations for furure action
