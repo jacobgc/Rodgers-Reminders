@@ -66,7 +66,7 @@ There are risks when developing an application. THe biggest risk is there not be
 ### Recomendations for furure action
 ?
 
-## Emailing "Mia Notte" to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.
+## Emailing to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.
 ![Email to Rodgers Reminders](https://image.ibb.co/kBSYhR/Capture.png)
 
 ## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
