@@ -41,7 +41,9 @@ I have had a personal experaince with this issue when working with a client. At 
 ## Requirements specification regarding the IOS app
 
 ### The scope and boundaries of the proposed IOS application
-?
+There may be one major boundary that needs to be addressed before development begins and that is how the app will remain stable when many users are using it at once. A suden influx of users could crash the servers if a solution is not put in place to protect against this. One fix is to go down a route that supports containers. This way a limit can be set so that one container can support lets say 50 users. Once 45 users connect another container is started in preperation for the new users. This solution would also have another server managing incomming connections and redirecting them to the container with the least amount of users to ensure that all containers are kept at an even level.
+
+The scope of this applications is quite limited, as this is only a reminders application. It is not meant to be a one app solution for everything on someones phone. That being said however, it can still include a lot of features that have mostly already been said. It will have an advanced login system which will contain social logins as well as support for organisations using LAPD/Active Directory. Authorised organisations will be able to request to have their LDAP server added into our system so employees/students can login through their standard login credentials they know. Reminders can be as invasive as the user wants as well. Due to the users allowing email/push notifications, alarms and other modes of comunication it ensures that the user gets the final say on how the reminder is handled.
 
 ### The inputs, outputs and processes of the proposed system
 Inputs | Outputs | Processes
@@ -56,8 +58,9 @@ New reminders|App notifications|Sending app notifications
 .|.|Password reset
 
 ### The timescales and milestones
-Timescales and milestones can be setup within this github repository which will add a date to an issue informing everyone that it needs to be resolved by X date. Github can also setup milestones where you have a checklist of things that needs to be done before the milestone is complte and it will also show you how long you have until the milestone should be coplete.
+Timescales and milestones can be setup within this github repository which will add a date to an issue informing everyone that it needs to be resolved by X date. Github can also setup milestones where you have a checklist of things that needs to be done before the milestone is complte and it will also show you how long you have until the milestone should be complete. Below is an example milestone that I could create. It shows you % complte, issues causing the milestone not to be complete, and how long each issue has left to be complted.
 
+![Example milestone](https://help.github.com/assets/images/help/issues/milestone-info-page.png)
 ### The risks and constraints
 There are risks when developing an application. THe biggest risk is there not being enough funding to sustane development. THis can be mitigated against by planning out the development so that each feature has a budget and timescale. Some constraints of application development is the fact that if one team falls behind on their work, it will cause other teams relying on that work to also fall behind. This costs time and a lot of money.
 
