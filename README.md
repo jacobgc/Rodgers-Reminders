@@ -21,9 +21,6 @@ The customer requires a very well built IOS application that gives the ability f
 ### The staff's needs, working styles and patterns
 The staff's needs will be somewhere pleasant to work, whether that be in an office or in their own home and work remotely, which is becoming a big trend in software development. Staff will also need to be in teams so they don't feel like all of the work is on them and they also need colleagues they can go to for advice on issues they are having. Staff should also be able to use flexi-hours which will allow them, within reason, to work when they want to work, rather than being forced into set schedules.
 
-### Location of staff, customers, premises, market/service
-?
-
 ## Evaluating the factors affecting the success and failure of the new IOS application in regards to the following
 
 ### The risk associated with completion of tasks on time and within budget
@@ -36,11 +33,12 @@ Creating an application comes with many risks, the main issue is budget. Most ap
 ### Staff skills and the maintenance of the IOS application
 The staff will all require different skills depending on which team they are in. Analysts will need to be analytic, designers will need to be good at designing and programmers will need skills in Swift and or other programming languages associated with IOS development.
 
-### Change management and user involvement in the development process
-?
+### Change of management and user involvement in the development process
+Allowing the user to be involved within the development process can be a virtue and a disaster. Its good because it menas and problems can be corrected before release due to the customer haveing a complete oversight. However it means the customer could start to ask for too much and cause the development teem to fall behind making alterations here and there. The same problem could occur if the management team of the client changes and want different styles or functions.
+
+I have had a personal experaince with this issue when working with a client. At first it was a few changes, but then it became changing almost everything upon every update which slowed development down to almost a hault. 
 
 ## Requirements specification regarding the IOS app
-?
 
 ### The scope and boundaries of the proposed IOS application
 ?
