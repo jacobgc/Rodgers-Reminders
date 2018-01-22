@@ -1,9 +1,9 @@
 # Requirements Specification
 
-## Evaluating the computing and business needs of Rodgers Reminders
+## Evaluating the computing and business needs of Rogers Reminders
 
 ### The services the organisation provides
-The Rodgers Reminders IOS application is being created to fill a gap in the market for a decent reminders, application. Many applications do some features and then other applications do others. This app is going to encompass them all within one application. Below is a basic list of some of the features that this IOS Application will include.
+The Rogers Reminders IOS application is being created to fill a gap in the market for a decent reminders, application. Many applications do some features and then other applications do others. This app is going to encompass them all within one application. Below is a basic list of some of the features that this IOS Application will include.
 
 Key = (Tick = Easy feature to implement, No Tick = Hard feature to implement)
 - [ ] Login System (Username/Password, Social login, Active directory login (Enterprise use))
@@ -68,13 +68,13 @@ There are risks when developing an application. THe biggest risk is there not be
 ?
 
 ## Emailing to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.
-![Email to Rodgers Reminders](https://image.ibb.co/kBSYhR/Capture.png)
+![Email to Rogers Reminders](https://image.ibb.co/kBSYhR/Capture.png)
 
 ## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
-Document analysis is the process of using pre-defined protocols ad methods to analyse a document and extract useful data from it. It allows researchers to look at pre-existing documents, online or physical to determain certain factors. For Rodgers Reminders a document analysis can be conduced on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
+Document analysis is the process of using pre-defined protocols ad methods to analyse a document and extract useful data from it. It allows researchers to look at pre-existing documents, online or physical to determain certain factors. For Rogers Reminders a document analysis can be conduced on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
 
 ## Creating a questionnaire to take to the meeting to ensure that all information that is required, is gathered.
-I have created a form which will be printed off and brought with me to the meeting to ensure that the requirements specification is just how the customer (Rodgers Reminders) wants it.
+I have created a form which will be printed off and brought with me to the meeting to ensure that the requirements specification is just how the customer (Rogers Reminders) wants it.
 ![Google Form](https://goo.gl/forms/fLs7G42uaT2O680n1)
 ## Keeping a record of all correspondence and meetings and update the requirements specification in light of the discussions
 
