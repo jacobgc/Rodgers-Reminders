@@ -7,6 +7,7 @@ The Rogers Reminders IOS application is being created to fill a gap in the marke
 
 Key = (Tick = Easy feature to implement, No Tick = Hard feature to implement)
 - [ ] Login System (Username/Password, Social login, Active directory login (Enterprise use))
+- [ ] Local Encrypted databases to store reminders
 - [x] Reminders (Goal based, time based)
 - [x] Calander events
 - [X] Alerts via notification and email
