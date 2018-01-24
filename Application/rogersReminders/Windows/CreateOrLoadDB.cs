@@ -40,8 +40,43 @@ namespace RogersReminders.Windows
 
         private void buttonLoadDatabase_Click(object sender, EventArgs e)
         {
-            SQLiteConnection.CreateFile("./databases/.sqlite");
+            
+        }
 
+        private void buttonCreateDatabase_Click(object sender, EventArgs e)
+        {
+            char[] CharacterArrayOfDatabaseName = textBoxCreateName.Text.ToCharArray(); // Create an array of characters from the provided string
+            CharacterArrayOfDatabaseName = Array.FindAll<char>(CharacterArrayOfDatabaseName, (c => (char.IsLetterOrDigit(c) // Loop through the array looking for anything but letters, white space or a dash
+                                              || char.IsWhiteSpace(c)
+                                              || c == '-')));
+            textBoxCreateName.Text = new string(CharacterArrayOfDatabaseName); // Output the character array as a new string
+
+
+            Boolean canCreate = true; // Create a variable to allow creation of the database
+            string[] Databases = Directory.GetFiles(@"./databases/", textBoxCreateName.Text + ".sqlite"); // Create an array of all files ending in .sqlite within the databases folder
+            foreach (string DataBaseName in Databases) // For every result
+            {
+                canCreate = false; // If a database exists with that name, disalow its creation
+            }
+            if(canCreate == false) // If the database can't be created, explain why.
+            {
+                labelErrorCreation.Visible = true; // Show error that the database already exists
+                labelErrorCreation.ForeColor = Color.Red;
+                labelErrorCreation.Text = "Error: A database with that name\r\nalready exists.";
+            }
+            else
+            {
+                SQLiteConnection.CreateFile("./databases/" + textBoxCreateName.Text + ".sqlite"); // Use the SQLiteConnection to create the sqlite file
+                labelErrorCreation.ForeColor = Color.Green; // Show success message
+                labelErrorCreation.Visible = true;
+                labelErrorCreation.Text = "successfully created database: " + textBoxCreateName.Text;
+            }
+
+        }
+
+        private void CreateOrLoadDB_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

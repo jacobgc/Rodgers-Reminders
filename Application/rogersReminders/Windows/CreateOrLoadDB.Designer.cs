@@ -37,6 +37,7 @@
             this.buttonLoadDatabase = new System.Windows.Forms.Button();
             this.comboBoxLoadDatabase = new System.Windows.Forms.ComboBox();
             this.tabPageCreateReminderDatabase = new System.Windows.Forms.TabPage();
+            this.labelErrorCreation = new System.Windows.Forms.Label();
             this.textBoxCreateName = new System.Windows.Forms.TextBox();
             this.labelCreateName = new System.Windows.Forms.Label();
             this.labelCreatePassword = new System.Windows.Forms.Label();
@@ -55,7 +56,7 @@
             this.tabControlCreateOrLoadDB.Location = new System.Drawing.Point(0, 0);
             this.tabControlCreateOrLoadDB.Name = "tabControlCreateOrLoadDB";
             this.tabControlCreateOrLoadDB.SelectedIndex = 0;
-            this.tabControlCreateOrLoadDB.Size = new System.Drawing.Size(284, 174);
+            this.tabControlCreateOrLoadDB.Size = new System.Drawing.Size(284, 181);
             this.tabControlCreateOrLoadDB.TabIndex = 0;
             // 
             // tabPageLoadReminderDatabase
@@ -69,7 +70,7 @@
             this.tabPageLoadReminderDatabase.Location = new System.Drawing.Point(4, 22);
             this.tabPageLoadReminderDatabase.Name = "tabPageLoadReminderDatabase";
             this.tabPageLoadReminderDatabase.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLoadReminderDatabase.Size = new System.Drawing.Size(276, 148);
+            this.tabPageLoadReminderDatabase.Size = new System.Drawing.Size(276, 155);
             this.tabPageLoadReminderDatabase.TabIndex = 0;
             this.tabPageLoadReminderDatabase.Text = "Load Reminder Database";
             this.tabPageLoadReminderDatabase.UseVisualStyleBackColor = true;
@@ -79,7 +80,7 @@
             this.labelDBNotFound.AutoSize = true;
             this.labelDBNotFound.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDBNotFound.ForeColor = System.Drawing.Color.Red;
-            this.labelDBNotFound.Location = new System.Drawing.Point(6, 43);
+            this.labelDBNotFound.Location = new System.Drawing.Point(2, 43);
             this.labelDBNotFound.Name = "labelDBNotFound";
             this.labelDBNotFound.Size = new System.Drawing.Size(177, 26);
             this.labelDBNotFound.TabIndex = 14;
@@ -98,7 +99,7 @@
             // labelLoadPassword
             // 
             this.labelLoadPassword.AutoSize = true;
-            this.labelLoadPassword.Location = new System.Drawing.Point(2, 80);
+            this.labelLoadPassword.Location = new System.Drawing.Point(2, 87);
             this.labelLoadPassword.Name = "labelLoadPassword";
             this.labelLoadPassword.Size = new System.Drawing.Size(117, 13);
             this.labelLoadPassword.TabIndex = 12;
@@ -106,17 +107,17 @@
             // 
             // textBoxLoadPassword
             // 
-            this.textBoxLoadPassword.Location = new System.Drawing.Point(3, 96);
+            this.textBoxLoadPassword.Location = new System.Drawing.Point(5, 103);
             this.textBoxLoadPassword.MaxLength = 256;
             this.textBoxLoadPassword.Name = "textBoxLoadPassword";
-            this.textBoxLoadPassword.Size = new System.Drawing.Size(270, 20);
+            this.textBoxLoadPassword.Size = new System.Drawing.Size(268, 20);
             this.textBoxLoadPassword.TabIndex = 2;
             this.textBoxLoadPassword.UseSystemPasswordChar = true;
             // 
             // buttonLoadDatabase
             // 
             this.buttonLoadDatabase.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonLoadDatabase.Location = new System.Drawing.Point(3, 122);
+            this.buttonLoadDatabase.Location = new System.Drawing.Point(3, 129);
             this.buttonLoadDatabase.Name = "buttonLoadDatabase";
             this.buttonLoadDatabase.Size = new System.Drawing.Size(270, 23);
             this.buttonLoadDatabase.TabIndex = 3;
@@ -134,6 +135,7 @@
             // 
             // tabPageCreateReminderDatabase
             // 
+            this.tabPageCreateReminderDatabase.Controls.Add(this.labelErrorCreation);
             this.tabPageCreateReminderDatabase.Controls.Add(this.textBoxCreateName);
             this.tabPageCreateReminderDatabase.Controls.Add(this.labelCreateName);
             this.tabPageCreateReminderDatabase.Controls.Add(this.labelCreatePassword);
@@ -142,10 +144,21 @@
             this.tabPageCreateReminderDatabase.Location = new System.Drawing.Point(4, 22);
             this.tabPageCreateReminderDatabase.Name = "tabPageCreateReminderDatabase";
             this.tabPageCreateReminderDatabase.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCreateReminderDatabase.Size = new System.Drawing.Size(276, 148);
+            this.tabPageCreateReminderDatabase.Size = new System.Drawing.Size(276, 155);
             this.tabPageCreateReminderDatabase.TabIndex = 1;
             this.tabPageCreateReminderDatabase.Text = "Create Reminder Database";
             this.tabPageCreateReminderDatabase.UseVisualStyleBackColor = true;
+            // 
+            // labelErrorCreation
+            // 
+            this.labelErrorCreation.AutoSize = true;
+            this.labelErrorCreation.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorCreation.ForeColor = System.Drawing.Color.Red;
+            this.labelErrorCreation.Location = new System.Drawing.Point(8, 43);
+            this.labelErrorCreation.Name = "labelErrorCreation";
+            this.labelErrorCreation.Size = new System.Drawing.Size(0, 13);
+            this.labelErrorCreation.TabIndex = 15;
+            this.labelErrorCreation.Visible = false;
             // 
             // textBoxCreateName
             // 
@@ -188,24 +201,26 @@
             // buttonCreateDatabase
             // 
             this.buttonCreateDatabase.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonCreateDatabase.Location = new System.Drawing.Point(3, 122);
+            this.buttonCreateDatabase.Location = new System.Drawing.Point(3, 129);
             this.buttonCreateDatabase.Name = "buttonCreateDatabase";
             this.buttonCreateDatabase.Size = new System.Drawing.Size(270, 23);
             this.buttonCreateDatabase.TabIndex = 6;
             this.buttonCreateDatabase.Text = "Create";
             this.buttonCreateDatabase.UseVisualStyleBackColor = true;
+            this.buttonCreateDatabase.Click += new System.EventHandler(this.buttonCreateDatabase_Click);
             // 
             // CreateOrLoadDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 174);
+            this.ClientSize = new System.Drawing.Size(284, 181);
             this.Controls.Add(this.tabControlCreateOrLoadDB);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CreateOrLoadDB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateOrLoadDB -- Rogers Reminders";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CreateOrLoadDB_FormClosed);
             this.Load += new System.EventHandler(this.CreateOrLoadDB_Load);
             this.tabControlCreateOrLoadDB.ResumeLayout(false);
             this.tabPageLoadReminderDatabase.ResumeLayout(false);
@@ -232,5 +247,6 @@
         private System.Windows.Forms.ComboBox comboBoxLoadDatabase;
         private System.Windows.Forms.Label labelDBNotFound;
         private System.Windows.Forms.TextBox textBoxCreateName;
+        private System.Windows.Forms.Label labelErrorCreation;
     }
 }

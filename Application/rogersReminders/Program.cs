@@ -16,7 +16,9 @@ namespace RogersReminders
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Changed to show the CreateOrLoadDB form rather than the MainWindow form
-            Application.Run(new Windows.CreateOrLoadDB());
+            var main_form = new Windows.OfflineOrOnline();
+            main_form.Show();
+            Application.Run();
 
             // Ensure there is a folder for local SQL databases
             System.IO.Directory.CreateDirectory("./databases");

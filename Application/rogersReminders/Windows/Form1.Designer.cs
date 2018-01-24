@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tabControlPages = new System.Windows.Forms.TabControl();
+            this.tabPageReminders = new System.Windows.Forms.TabPage();
             this.tabPageAddReminder = new System.Windows.Forms.TabPage();
             this.tabControlDifferentReminders = new System.Windows.Forms.TabControl();
             this.tabPageBasicReminder = new System.Windows.Forms.TabPage();
@@ -45,7 +46,6 @@
             this.tabPageCalendar = new System.Windows.Forms.TabPage();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabPageSettings = new System.Windows.Forms.TabPage();
-            this.tabPageReminders = new System.Windows.Forms.TabPage();
             this.tabControlPages.SuspendLayout();
             this.tabPageAddReminder.SuspendLayout();
             this.tabControlDifferentReminders.SuspendLayout();
@@ -71,6 +71,16 @@
             this.tabControlPages.Size = new System.Drawing.Size(925, 461);
             this.tabControlPages.TabIndex = 6;
             // 
+            // tabPageReminders
+            // 
+            this.tabPageReminders.Location = new System.Drawing.Point(4, 22);
+            this.tabPageReminders.Name = "tabPageReminders";
+            this.tabPageReminders.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageReminders.Size = new System.Drawing.Size(917, 435);
+            this.tabPageReminders.TabIndex = 0;
+            this.tabPageReminders.Text = "Reminders";
+            this.tabPageReminders.UseVisualStyleBackColor = true;
+            // 
             // tabPageAddReminder
             // 
             this.tabPageAddReminder.Controls.Add(this.tabControlDifferentReminders);
@@ -80,7 +90,7 @@
             this.tabPageAddReminder.Location = new System.Drawing.Point(4, 22);
             this.tabPageAddReminder.Name = "tabPageAddReminder";
             this.tabPageAddReminder.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAddReminder.Size = new System.Drawing.Size(917, 459);
+            this.tabPageAddReminder.Size = new System.Drawing.Size(917, 435);
             this.tabPageAddReminder.TabIndex = 1;
             this.tabPageAddReminder.Text = "Add Reminder";
             this.tabPageAddReminder.UseVisualStyleBackColor = true;
@@ -219,14 +229,14 @@
             this.tabPageCalendar.Controls.Add(this.monthCalendar1);
             this.tabPageCalendar.Location = new System.Drawing.Point(4, 22);
             this.tabPageCalendar.Name = "tabPageCalendar";
-            this.tabPageCalendar.Size = new System.Drawing.Size(917, 459);
+            this.tabPageCalendar.Size = new System.Drawing.Size(917, 435);
             this.tabPageCalendar.TabIndex = 2;
             this.tabPageCalendar.Text = "Calendar";
             this.tabPageCalendar.UseVisualStyleBackColor = true;
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(4, 3);
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(4, 2);
             this.monthCalendar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.monthCalendar1.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
             this.monthCalendar1.Location = new System.Drawing.Point(0, 0);
@@ -241,20 +251,10 @@
             // 
             this.tabPageSettings.Location = new System.Drawing.Point(4, 22);
             this.tabPageSettings.Name = "tabPageSettings";
-            this.tabPageSettings.Size = new System.Drawing.Size(917, 459);
+            this.tabPageSettings.Size = new System.Drawing.Size(917, 435);
             this.tabPageSettings.TabIndex = 3;
             this.tabPageSettings.Text = "Settings";
             this.tabPageSettings.UseVisualStyleBackColor = true;
-            // 
-            // tabPageReminders
-            // 
-            this.tabPageReminders.Location = new System.Drawing.Point(4, 22);
-            this.tabPageReminders.Name = "tabPageReminders";
-            this.tabPageReminders.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageReminders.Size = new System.Drawing.Size(917, 435);
-            this.tabPageReminders.TabIndex = 0;
-            this.tabPageReminders.Text = "Reminders";
-            this.tabPageReminders.UseVisualStyleBackColor = true;
             // 
             // MainWindow
             // 
@@ -264,6 +264,7 @@
             this.Controls.Add(this.tabControlPages);
             this.Name = "MainWindow";
             this.Text = "Rogers Reminders";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainWindow_FormClosed);
             this.tabControlPages.ResumeLayout(false);
             this.tabPageAddReminder.ResumeLayout(false);
             this.tabPageAddReminder.PerformLayout();
