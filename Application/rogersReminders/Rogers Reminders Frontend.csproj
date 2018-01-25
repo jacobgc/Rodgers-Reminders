@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{65C15FA4-8924-46E6-9109-8506CD386D03}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RogersReminders</RootNamespace>
-    <AssemblyName>RogersReminders</AssemblyName>
+    <RootNamespace>RogersRemindersFrontend</RootNamespace>
+    <AssemblyName>Rogers Reminders Frontend</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -93,6 +93,7 @@
   <ItemGroup>
     <Compile Include="Classes\User.cs" />
     <Compile Include="Globals.cs" />
+    <Compile Include="Helpers.cs" />
     <Compile Include="Windows\CreateOrLoadDB.cs">
       <SubType>Form</SubType>
     </Compile>

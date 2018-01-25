@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RogersRemindersFrontend;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -67,9 +68,18 @@ namespace RogersReminders.Windows
             else
             {
                 SQLiteConnection.CreateFile("./databases/" + textBoxCreateName.Text + ".sqlite"); // Use the SQLiteConnection to create the sqlite file
+
                 labelErrorCreation.ForeColor = Color.Green; // Show success message
                 labelErrorCreation.Visible = true;
                 labelErrorCreation.Text = "successfully created database: " + textBoxCreateName.Text;
+
+                if (textBoxCreatePassword.Text != "")
+                {
+                    Helpers.AESEncrypt("./databases/" + textBoxCreateName.Text + ".sqlite", textBoxCreatePassword.Text);
+                    labelErrorCreation.Text = "successfully created and\r\nencrypted database: " + textBoxCreateName.Text;
+                    File.Delete("./databases/" + textBoxCreateName.Text + ".sqlite");
+                }
+
             }
 
         }

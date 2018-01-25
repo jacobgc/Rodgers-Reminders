@@ -30,12 +30,9 @@
         {
             this.tabControlOnlineOrOffline = new System.Windows.Forms.TabControl();
             this.tabPageLogin = new System.Windows.Forms.TabPage();
-            this.buttonLoadOnline = new System.Windows.Forms.Button();
             this.tabPageRegister = new System.Windows.Forms.TabPage();
             this.labelErrorCreation = new System.Windows.Forms.Label();
-            this.buttonOfflineLoad = new System.Windows.Forms.Button();
             this.tabControlOnlineOrOffline.SuspendLayout();
-            this.tabPageLogin.SuspendLayout();
             this.tabPageRegister.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +50,6 @@
             // 
             // tabPageLogin
             // 
-            this.tabPageLogin.Controls.Add(this.buttonLoadOnline);
             this.tabPageLogin.Location = new System.Drawing.Point(4, 22);
             this.tabPageLogin.Name = "tabPageLogin";
             this.tabPageLogin.Padding = new System.Windows.Forms.Padding(3);
@@ -62,20 +58,9 @@
             this.tabPageLogin.Text = "Login";
             this.tabPageLogin.UseVisualStyleBackColor = true;
             // 
-            // buttonLoadOnline
-            // 
-            this.buttonLoadOnline.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonLoadOnline.Location = new System.Drawing.Point(3, 3);
-            this.buttonLoadOnline.Name = "buttonLoadOnline";
-            this.buttonLoadOnline.Size = new System.Drawing.Size(270, 149);
-            this.buttonLoadOnline.TabIndex = 3;
-            this.buttonLoadOnline.Text = "Load ONLINE Client";
-            this.buttonLoadOnline.UseVisualStyleBackColor = true;
-            // 
             // tabPageRegister
             // 
             this.tabPageRegister.Controls.Add(this.labelErrorCreation);
-            this.tabPageRegister.Controls.Add(this.buttonOfflineLoad);
             this.tabPageRegister.Location = new System.Drawing.Point(4, 22);
             this.tabPageRegister.Name = "tabPageRegister";
             this.tabPageRegister.Padding = new System.Windows.Forms.Padding(3);
@@ -95,16 +80,6 @@
             this.labelErrorCreation.TabIndex = 15;
             this.labelErrorCreation.Visible = false;
             // 
-            // buttonOfflineLoad
-            // 
-            this.buttonOfflineLoad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonOfflineLoad.Location = new System.Drawing.Point(3, 3);
-            this.buttonOfflineLoad.Name = "buttonOfflineLoad";
-            this.buttonOfflineLoad.Size = new System.Drawing.Size(270, 149);
-            this.buttonOfflineLoad.TabIndex = 6;
-            this.buttonOfflineLoad.Text = "Load OFFLINE Client";
-            this.buttonOfflineLoad.UseVisualStyleBackColor = true;
-            // 
             // LoginOrRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,7 +93,6 @@
             this.Text = "LoginOrRegister";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginOrRegister_FormClosed);
             this.tabControlOnlineOrOffline.ResumeLayout(false);
-            this.tabPageLogin.ResumeLayout(false);
             this.tabPageRegister.ResumeLayout(false);
             this.tabPageRegister.PerformLayout();
             this.ResumeLayout(false);
@@ -129,9 +103,7 @@
 
         private System.Windows.Forms.TabControl tabControlOnlineOrOffline;
         private System.Windows.Forms.TabPage tabPageLogin;
-        private System.Windows.Forms.Button buttonLoadOnline;
         private System.Windows.Forms.TabPage tabPageRegister;
         private System.Windows.Forms.Label labelErrorCreation;
-        private System.Windows.Forms.Button buttonOfflineLoad;
     }
 }

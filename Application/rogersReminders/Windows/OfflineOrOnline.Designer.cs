@@ -71,6 +71,7 @@
             this.buttonLoadOnline.TabIndex = 3;
             this.buttonLoadOnline.Text = "Load ONLINE Client";
             this.buttonLoadOnline.UseVisualStyleBackColor = true;
+            this.buttonLoadOnline.Click += new System.EventHandler(this.buttonLoadOnline_Click);
             // 
             // tabPageOffline
             // 

@@ -27,7 +27,15 @@ namespace RogersReminders.Windows
 
         private void OfflineOrOnline_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); // Exit application if the window is closed
+        }
+
+        private void buttonLoadOnline_Click(object sender, EventArgs e)
+        {
+            Globals.ONLINE = false; // Set global ONLINE variable to signel to the rest of the application that we are running online
+            this.Hide(); // hide the current widnow
+            LoginOrRegister createOrLoadDB = new LoginOrRegister(); // Create a new instance of the LoginOrRegister window
+            createOrLoadDB.Show();  // Show the window
         }
     }
 }

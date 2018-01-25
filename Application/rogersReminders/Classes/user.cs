@@ -12,5 +12,18 @@ namespace WindowsFormsApp1.Classes
         public String Password { get; set; }
         public DateTime TimeCreated { get; set; }
         public Boolean EmailVerified { get; set; }
+
+        public static void AttemptLogin(string Username, string Password)
+        {
+
+        }
+
+        public static void AttemptRegistration(string Username, string Password)
+        {
+
+        }
+
     }
+
+    
 }
