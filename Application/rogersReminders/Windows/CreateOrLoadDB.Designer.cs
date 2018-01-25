@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateOrLoadDB));
             this.tabControlCreateOrLoadDB = new System.Windows.Forms.TabControl();
             this.tabPageLoadReminderDatabase = new System.Windows.Forms.TabPage();
             this.labelDBNotFound = new System.Windows.Forms.Label();
@@ -215,6 +216,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 181);
             this.Controls.Add(this.tabControlCreateOrLoadDB);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CreateOrLoadDB";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OfflineOrOnline));
             this.tabControlOnlineOrOffline = new System.Windows.Forms.TabControl();
             this.tabPageOnline = new System.Windows.Forms.TabPage();
             this.buttonLoadOnline = new System.Windows.Forms.Button();
@@ -113,6 +114,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 181);
             this.Controls.Add(this.tabControlOnlineOrOffline);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "OfflineOrOnline";

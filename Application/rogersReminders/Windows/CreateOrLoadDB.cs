@@ -20,8 +20,9 @@ namespace RogersReminders.Windows
             InitializeComponent();
         }
 
-        private void CreateOrLoadDB_Load(object sender, EventArgs e)
+        private void lookForDatabases() // Add to method so it can be called when a database is created
         {
+            comboBoxLoadDatabase.Items.Clear(); // Remove any existing items
             string[] Databases = Directory.GetFiles(@"./databases/", "*.sqlite"); // Create an array of all files ending in .sqlite within the databases folder
             foreach (string DataBaseName in Databases) // For every result
             {
@@ -37,6 +38,18 @@ namespace RogersReminders.Windows
                 textBoxLoadPassword.Enabled = false;
                 buttonLoadDatabase.Enabled = false;
             }
+            else
+            {
+                labelDBNotFound.Visible = false;
+                comboBoxLoadDatabase.Enabled = true;
+                textBoxLoadPassword.Enabled = true;
+                buttonLoadDatabase.Enabled = true;
+            }
+        }
+
+        private void CreateOrLoadDB_Load(object sender, EventArgs e)
+        {
+            lookForDatabases();
         }
 
         private void buttonLoadDatabase_Click(object sender, EventArgs e)
@@ -79,6 +92,8 @@ namespace RogersReminders.Windows
                     labelErrorCreation.Text = "successfully created and\r\nencrypted database: " + textBoxCreateName.Text;
                     File.Delete("./databases/" + textBoxCreateName.Text + ".sqlite");
                 }
+
+                lookForDatabases();
 
             }
 
