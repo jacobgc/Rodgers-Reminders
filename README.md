@@ -76,7 +76,7 @@ Document analysis is the process of using pre-defined protocols ad methods to an
 
 ## Creating a questionnaire to take to the meeting to ensure that all information that is required, is gathered.
 I have created a form which will be printed off and brought with me to the meeting to ensure that the requirements specification is just how the customer (Rogers Reminders) wants it.
-![Google Form](https://goo.gl/forms/fLs7G42uaT2O680n1)
+[Google Form](https://goo.gl/forms/fLs7G42uaT2O680n1)
 ## Keeping a record of all correspondence and meetings and update the requirements specification in light of the discussions
 
 ## Evaluating my requirements specifications to show how it fulfils the requirements for the IOS application.
