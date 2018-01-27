@@ -89,10 +89,24 @@ For this application I have produced a variaty of desings that meet the requirem
 ### Input and output requirements
 This application will require quite a few inputs and outputs to perform its actions. On a desktop computer users will have the choice of using a local database to store their reminders or use an online server to store their database files, this will allow them to use the software on multiple devices. The main inputs and outputs for this application will use a protocal called SQL. SQL uses a query based approach so within the application I can create a query and have place data from the forms within the query to add it to the database. The main output of the application will be Windows 10 Alerts which can be found in the action centre. These alerts will let a user know when their reminders are up or if there is a deadline coming up soon.
 
-The activity centre
 ![The Activity Centre](https://i.imgur.com/i83i2kO.png)
 
 #### Screen layouts for mobile devices and alternative layout for desktop pc
+![Main Design](https://i.imgur.com/1a35oJw.png)
+
+This is how the main window of the application will look. This is where the user can see the current reminders, create a new reminder and filter the reminders. This design will only very slightly change for a mobile device and that change is the left column will colapse and expand with a button to save screen space on the small device
+
+![Creating a new reminder](https://i.imgur.com/SOcUpMc.png)
+
+This is how creating a new reminder will look. It will allow users to enter details about the reminder and define if the reminder should be time based (with an alert) or if it should be goal based. This design won't change on mobile devices as it already has a slim design.
+
+![Delete Reminder](https://i.imgur.com/MsLFONk.png)
+
+This is the message box that will appear when a users selects that they want to delete a reminder. This design could be used for other yes/no style questions. The design will be expanded to fit the whole screen on a mobile device.
+
+![Application Settings](https://i.imgur.com/XtZE7tS.png)
+
+This is how the settings for the application will look. It shows how different inputs will be handled and how the user can enter them. It features a slim design like the creating a new reminder design to keep consistent. Again it will not change on mobile.
 
 #### Data entry forms, including layout and structure, proposed fields and data entry methods
 
