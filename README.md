@@ -117,6 +117,9 @@ This is how the settings for the application will look. It shows how different i
 ### Data Requirements
 
 #### Data flow diagrams
+I have created a data flow diagram which will outline how the data will traverse through the application in an offline state:
+
+![Data Flow Diagram](https://raw.githubusercontent.com/jacobgc/Rogers-Reminders/master/Designs/Data%20Flow%20Diagram.png)
 
 #### Data dictionaries identifying entities and validation
 
