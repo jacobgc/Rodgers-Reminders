@@ -83,9 +83,14 @@ I have created a form which will be printed off and brought with me to the meeti
 
 # Designing the IOS application
 
-## Producing a detailed design documentation  showing
+## Producing a detailed design documentation
+For this application I have produced a variaty of desings that meet the requirements of the client. I have made one design with four different layouts, and two more layouts for mobile and tablet devices. I have also designed one other design with a layout for a computer, tablet and phone device. I will evaluate these designs using the requirements specification as a guide to justify why I have made certain design choices. Even though this is a windows application, I have created mobile and tablet desings to show how the application can be addapted to other devices in the future.
 
 ### Input and output requirements
+This application will require quite a few inputs and outputs to perform its actions. On a desktop computer users will have the choice of using a local database to store their reminders or use an online server to store their database files, this will allow them to use the software on multiple devices. The main inputs and outputs for this application will use a protocal called SQL. SQL uses a query based approach so within the application I can create a query and have place data from the forms within the query to add it to the database. The main output of the application will be Windows 10 Alerts which can be found in the action centre. These alerts will let a user know when their reminders are up or if there is a deadline coming up soon.
+
+The activity centre
+![The Activity Centre](https://i.imgur.com/i83i2kO.png)
 
 #### Screen layouts for mobile devices and alternative layout for desktop pc
 
