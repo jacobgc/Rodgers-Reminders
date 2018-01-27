@@ -113,33 +113,37 @@ This is how the settings for the application will look. It shows how different i
 #### Report forms
 
 #### Hardware and software requirements
+The hardware required for this application is a basic computer which can run the operating system Microsoft Windows 7 and above. The application relies on Windows Forms which do not require any advanced hardware requirements and run on any Windows 7 and above.
 
 ### Data Requirements
 
-#### Data flow diagrams
+#### Data Flow Diagram
 I have created a data flow diagram which will outline how the data will traverse through the application in an offline state:
 
 ![Data Flow Diagram](https://raw.githubusercontent.com/jacobgc/Rogers-Reminders/master/Designs/Data%20Flow%20Diagram.png)
 
-#### Data dictionaries identifying entities and validation
+#### Data Dictionary
 
-#### Decision tables and activity diagrams
+#### Activity Diagrams
 
-## Producing a plan for testing, maintaining and updating the IOS application
+## Producing a plan for testing, maintaining and updating the desktop application
 
 ### Testing methods to be used
+For this application only basic user input tests will be completed. These involve testing different data in an input box and checking the result of buttons being pressed.
 
 ### Test data boundaries in relation to normal, abnormal and extreme data
-
-### Identify the test users
+Data will be tested in three ways.
+* Normal: If the textbox expects a number give it a number E.G: 3.
+* Abnormal: If the textbox expects a number give it a string E.G: "Apple" and see if it handles the incorrect data type
+* Extreme: If the textbox expects a number give it a very large number E.G: 4564564686798
 
 ### Proposed test schedule
+Testing should be done after a new feature is added and any related features should also be tested again to ensure that they have not stopped working due to the new feature.
 
 ### Proposed maintenance and update schedule
+Maintenance and updates should be done once a week to avoid stress on the user updating the application too much. Once a week is a good balance and allows time for more advanced features to be added within the week aswell.
 
-## Evaluating the design against the organisation's requirements
-
-## Evaluating your skills, knowledge and behaviour
+%% TODO: Add test plan
 
 ### My Time management and planning
 
