@@ -68,7 +68,7 @@ Timescales and milestones can be setup within this github repository which will 
 There are risks when developing an application. THe biggest risk is there not being enough funding to sustane development. THis can be mitigated against by planning out the development so that each feature has a budget and timescale. Some constraints of application development is the fact that if one team falls behind on their work, it will cause other teams relying on that work to also fall behind. This costs time and a lot of money.
 
 ### Recomendations for furure action
-?
+TODO Google maps, preset reminders, snooze button. Geofencing
 
 ## Emailing to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.
 ![Email to Rogers Reminders](https://image.ibb.co/kBSYhR/Capture.png)
