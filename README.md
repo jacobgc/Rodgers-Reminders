@@ -35,6 +35,8 @@ TODO *Talk about different teams falling behind causing other teams to fall behi
 The staff will all require different skills depending on which team they are in. Analysts will need to be analytic, designers will need to be good at designing and programmers will need skills in Swift and or other programming languages associated with IOS development.
 
 ### Change of management and user involvement in the development process
+TODO talk about people leaving and the ability for people to replace them easily due to how work is done.
+
 Allowing the user to be involved within the development process can be a virtue and a disaster. Its good because it menas and problems can be corrected before release due to the customer haveing a complete oversight. However it means the customer could start to ask for too much and cause the development teem to fall behind making alterations here and there. The same problem could occur if the management team of the client changes and want different styles or functions.
 
 I have had a personal experaince with this issue when working with a client. At first it was a few changes, but then it became changing almost everything upon every update which slowed development down to almost a hault. 
