@@ -3,7 +3,7 @@
 ## Evaluating the computing and business needs of Rogers Reminders
 
 ### The services the organisation provides
-The Rogers Reminders IOS application is being created to fill a gap in the market for a decent reminders, application. Many applications do some features and then other applications do others. This app is going to encompass them all within one application. Below is a basic list of some of the features that this IOS Application will include.
+Rogers Reminders is looking to create an application to fill a gap in the market for a decent reminders, application. Many applications do some features and then other applications do others. This app is going to encompass them all within one application. Below is a basic list of some of the features that this IOS Application will include.
 
 Key = (Tick = Easy feature to implement, No Tick = Hard feature to implement)
 - [ ] Login System (Username/Password, Social login, Active directory login (Enterprise use))
@@ -14,22 +14,22 @@ Key = (Tick = Easy feature to implement, No Tick = Hard feature to implement)
 - [X] Native application (not web based)
 
 ### The Aims and goals of the organisation
-The aim of the organisation is to create a final solution for reminder applications, hopefully, this application will include every feature that users need. The application will include a feature request form that will allow users to request features that they require.
+The aim of the organisation is to create a final solution for reminder applications, hopefully, this application will include every feature that users need. The application will include a feature request form that will allow users to request features that they require. 
 
 ### The customer's needs, expectations and how the app will be delivered
-The customer requires a very well built IOS application that gives the ability for reminders to be created however a user wants and to be able to notify the user if so required. The app will be delivered using a continuous integration system that will allow updates to be pushed automatically to the end user every week. This will allow the client to not need to worry about updates as it will be handled by the CI system.
+The customer requires a very well built IOS application that gives the ability for reminders to be created however a user wants and to be able to notify the user if so required. The app will be delivered using a continuous integration system that will allow updates to be pushed automatically to the end user every week. This will allow the client to not need to worry about updates as it will be handled by the continuous integration system. Rogers Reminders is trying to produce an application to help those with poor time management skills and organisational skills. 
 
 ### The staff's needs, working styles and patterns
-The staff's needs will be somewhere pleasant to work, whether that be in an office or in their own home and work remotely, which is becoming a big trend in software development. Staff will also need to be in teams so they don't feel like all of the work is on them and they also need colleagues they can go to for advice on issues they are having. Staff should also be able to use flexi-hours which will allow them, within reason, to work when they want to work, rather than being forced into set schedules.
+The staff's needs will be somewhere pleasant to work, whether that be in an office or in their own home and work remotely, which is becoming a big trend in software development. Staff will also need to be in teams so they don't feel like all of the work is on them and they also need colleagues they can go to for advice on issues they are having. Staff should also be able to use flexi-hours which will allow them, within reason, to work when they want to work, rather than being forced into set schedules. An ideal schedual would be a fixed amount of time every week day to see a continus stream of updates. However this may not be feasable so work times are flexable.
 
-## Evaluating the factors affecting the success and failure of the new IOS application in regards to the following
+## Evaluating the factors affecting the success and failure of the new application in regards to the following
 
 ### The risk associated with completion of tasks on time and within budget
 Creating an application comes with many risks, the main issue is budget. Most applications fail because the company behind them or the client asking for the application runs out of money to keep the development going. This can be mitigated against by conducting a thorough requirements specification and analysing every feature to ensure that the budget encompasses it and that there is enough time for that feature to be completed.
 
 ### Costs and time constraints
 *Did I not just cover that above?*
-*Talk about different teams falling behind causing other teams to fall behind due to other work not being completed*
+TODO *Talk about different teams falling behind causing other teams to fall behind due to other work not being completed*
 
 ### Staff skills and the maintenance of the IOS application
 The staff will all require different skills depending on which team they are in. Analysts will need to be analytic, designers will need to be good at designing and programmers will need skills in Swift and or other programming languages associated with IOS development.
@@ -39,9 +39,9 @@ Allowing the user to be involved within the development process can be a virtue 
 
 I have had a personal experaince with this issue when working with a client. At first it was a few changes, but then it became changing almost everything upon every update which slowed development down to almost a hault. 
 
-## Requirements specification regarding the IOS app
+## Requirements specification regarding the application
 
-### The scope and boundaries of the proposed IOS application
+### The scope and boundaries of the proposed application
 There may be one major boundary that needs to be addressed before development begins and that is how the app will remain stable when many users are using it at once. A suden influx of users could crash the servers if a solution is not put in place to protect against this. One fix is to go down a route that supports containers. This way a limit can be set so that one container can support lets say 50 users. Once 45 users connect another container is started in preperation for the new users. This solution would also have another server managing incomming connections and redirecting them to the container with the least amount of users to ensure that all containers are kept at an even level.
 
 The scope of this applications is quite limited, as this is only a reminders application. It is not meant to be a one app solution for everything on someones phone. That being said however, it can still include a lot of features that have mostly already been said. It will have an advanced login system which will contain social logins as well as support for organisations using LAPD/Active Directory. Authorised organisations will be able to request to have their LDAP server added into our system so employees/students can login through their standard login credentials they know. Reminders can be as invasive as the user wants as well. Due to the users allowing email/push notifications, alarms and other modes of comunication it ensures that the user gets the final say on how the reminder is handled.
@@ -71,12 +71,16 @@ There are risks when developing an application. THe biggest risk is there not be
 ## Emailing to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.
 ![Email to Rogers Reminders](https://image.ibb.co/kBSYhR/Capture.png)
 
-## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
-Document analysis is the process of using pre-defined protocols ad methods to analyse a document and extract useful data from it. It allows researchers to look at pre-existing documents, online or physical to determain certain factors. For Rogers Reminders a document analysis can be conduced on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
-
 ## Creating a questionnaire to take to the meeting to ensure that all information that is required, is gathered.
-I have created a form which will be printed off and brought with me to the meeting to ensure that the requirements specification is just how the customer (Rogers Reminders) wants it.
+I have created a questionnaire to create a feasibility overview to see if this project is worth the time and effort of the team and to see if the team has the equipment they require to complete the task and create the Rogers Reminders application.
 [Google Form](https://goo.gl/forms/fLs7G42uaT2O680n1)
+
+## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
+Document analysis is the process of using predefined protocols ad methods to analyse a document and extract useful data from it. It allows researchers to look at preexisting documents, online or physical to determain certain factors. For Rogers Reminders a document analysis can be conduced on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
+
+### Document
+### Protocols for carrying out investigation, e.g. confidentiality, company policy, security.
+
 ## Keeping a record of all correspondence and meetings and update the requirements specification in light of the discussions
 
 ## Evaluating my requirements specifications to show how it fulfils the requirements for the IOS application.
