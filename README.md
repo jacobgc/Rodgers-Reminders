@@ -60,11 +60,11 @@ Inputs | Outputs | Processes
 Login details|account details sent to client|Hashing password
 New feature requests|Reminders sent to client|Sending emails
 New reminders|App notifications|Sending app notifications
-.|Email notifications|Adding a new reminder
-.|.|Removing reminder
-.|.|Checking if a notification needs to be sent
-.|.|Email verification
-.|.|Password reset
+||Email notifications|Adding a new reminder
+|||Removing reminder
+|||Checking if a notification needs to be sent
+|||Email verification
+|||Password reset
 
 ### The timescales and milestones
 Timescales and milestones can be set up within this GitHub repository which will add a date to an issue informing everyone that it needs to be resolved by X date. Github can also set up milestones where you have a checklist of things that need to be done before the milestone is complete and it will also show you how long you have until the milestone should be complete. Below is an example milestone that I could create. It shows you % complete, issues causing the milestone not to be complete, and how long each issue has left to be completed.
@@ -126,23 +126,13 @@ This is the message box that will appear when a user selects that they want to d
 
 This is how the settings for the application will look. It shows how different inputs will be handled and how the user can enter them. It features a slim design like the creating a new reminder design to keep consistent. Again it will not change on mobile.
 
-#### Data entry forms, including layout and structure, proposed fields and data entry methods
-
-#### Report forms
-
 #### Hardware and software requirements
 The hardware required for this application is a basic computer which can run the operating system Microsoft Windows 7 and above. The application relies on Windows Forms which do not require any advanced hardware requirements and run on any Windows 7 and above.
-
-### Data Requirements
 
 #### Data Flow Diagram
 I have created a data flow diagram which will outline how the data will traverse through the application in an offline state:
 
 ![Data Flow Diagram](https://raw.githubusercontent.com/jacobgc/Rogers-Reminders/master/Designs/Data%20Flow%20Diagram.png)
-
-#### Data Dictionary
-
-#### Activity Diagrams
 
 ## Producing a plan for testing, maintaining and updating the desktop application
 
@@ -162,6 +152,19 @@ Testing should be done after a new feature is added and any related features sho
 Maintenance and updates should be done once a week to avoid stress on the user updating the application too much. Once a week is a good balance and allows time for more advanced features to be added within the week as well.
 
 %% TODO: Add test plan
+Test Number | Test Type | Target | Purpose | Test Data | Expected Result| Actual Result|
+------------ | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
+0 | Button | Main Form | To identify any issues with the buttons on the target | Left Mouse Click | Button to open menu associated with the button as per the specification | ??
+1 | Text Input | Main Form | To identify any issues with the search box on the target | Normal / Abnormal / Extreme | Searches for the string and returns matching reminders| ??
+2 | Scroll | Main Form| To identify any issues with the scrolling over the reminders | Mouse Wheel Scroll Up/Down | scrolls only the reminders and not the tags | ??
+3 | Text box | New Reminder Form | To identify any issues with the "Reminder Name" Text box and see if error checking works | Normal / Abnormal / Extreme | Text box to only allow alphanumeric characters | ??
+4 | Text box | New Reminder Form | To identify any issues with the "Reminder Description" Text box and see if error checking works | Normal / Abnormal / Extreme | Text box to only allow alphanumeric characters | ??
+5 | Radio Button | New Reminder Form | To identify any problems with the radio button selections | Left Mouse Button | To change the questions post to this one depending on the input | ??
+6 | Text Selection | New Reminder Form | To identify any problems with the text selection box | Left Mouse Button| To select the goals specified in the text selection box | ??
+7 | Button | New Reminder Form | To identify any issues with the "Add Reminder" button on the target | Left Mouse Button | The form should search for errors in the users input and if there are none, create the reminder. | ??
+8 | Button | Delete Confirmation | To identify any issues with the buttons on the target | Left Mouse Button | The buttons should either delete the reminder or preserve it as the user canceled | ??
+9 |
+
 
 ### My Time management and planning
 
