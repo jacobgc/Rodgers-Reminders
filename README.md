@@ -92,13 +92,6 @@ I have created a questionnaire to create a feasibility overview to see if this p
 ## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
 Document analysis is the process of using predefined protocols and methods to analyse a document and extract useful data from it. It allows researchers to look at preexisting documents, online or physical to determine certain factors. For Rogers Reminders a document analysis can be conducted on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
 
-### Document
-### Protocols for carrying out investigation, e.g. confidentiality, company policy, security.
-
-## Keeping a record of all correspondence and meetings and update the requirements specification in light of the discussions
-
-## Evaluating my requirements specifications to show how it fulfils the requirements for the IOS application.
-
 # Designing the IOS application
 
 ## Producing a detailed design documentation
