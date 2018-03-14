@@ -25,6 +25,8 @@
       - [Preset reminders](#preset-reminders)
   * [Emailing to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.](#emailing-to-request-a-meeting-to-discuss-the-quality-of-the-proposed-ios-application-and-the-suitability-of-the-original-requirements)
   * [Creating a questionnaire to take to the meeting to ensure that all information that is required, is gathered.](#creating-a-questionnaire-to-take-to-the-meeting-to-ensure-that-all-information-that-is-required-is-gathered)
+      - [First question](#first-question)
+      - [Second question](#second-question)
   * [Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.](#discussing-how-we-are-going-to-carry-out-document-analysis-and-the-protocols-that-will-be-used-for-carrying-out-the-investigation)
 - [Designing the IOS application](#designing-the-ios-application)
   * [Producing a detailed design documentation](#producing-a-detailed-design-documentation)
@@ -133,6 +135,16 @@ I have created a questionnaire to create a feasibility overview to see if this p
 [Google Form](https://goo.gl/forms/fLs7G42uaT2O680n1)
 
 ###Response from the questionnaire 
+
+From this form I received 3 responses from stakeholders within the organisation. The following is a screen shot from form response.
+
+![Google Form Response](https://i.imgur.com/6Vk8Dyn.png)
+
+#### First question
+Regarding the first question: "Are there any parts of the requirements specification you would change?"; I have chosen to take no action taking into account the responses; two of them are off topic / not relevant, and the other asks me to "Explain some sections with more detail" However this is only a brief requirements specification and will not cover every aspect, hence why I have been brief.
+
+#### Second question
+Regarding the second question: "Are there any parts of the requirements specification you specifically like?" I got three responses. I have taken them into account and will note the format I have used in those sections as they are well liked.
 
 ## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
 Document analysis is the process of using predefined protocols and methods to analyse a document and extract useful data from it. It allows researchers to look at preexisting documents, online or physical to determine certain factors. For Rogers Reminders a document analysis can be conducted on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
