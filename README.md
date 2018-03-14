@@ -199,4 +199,3 @@ Test Number | Test Type | Target | Purpose | Test Data | Expected Result| Actual
 6 | Text Selection | New Reminder Form | To identify any problems with the text selection box | Left Mouse Button| To select the goals specified in the text selection box | ??
 7 | Button | New Reminder Form | To identify any issues with the "Add Reminder" button on the target | Left Mouse Button | The form should search for errors in the users input and if there are none, create the reminder. | ??
 8 | Button | Delete Confirmation | To identify any issues with the buttons on the target | Left Mouse Button | The buttons should either delete the reminder or preserve it as the user canceled | ??
-9 |
