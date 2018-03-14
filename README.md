@@ -1,3 +1,50 @@
+# Rogers Reminders Unit 22
+
+# Table of contents
+<!-- toc -->
+
+- [Requirements Specification](#requirements-specification)
+  * [Evaluating the computing and business needs of Rogers Reminders](#evaluating-the-computing-and-business-needs-of-rogers-reminders)
+    + [The services the organisation provides](#the-services-the-organisation-provides)
+    + [The Aims and goals of the organisation](#the-aims-and-goals-of-the-organisation)
+    + [The customer's needs, expectations and how the app will be delivered](#the-customers-needs-expectations-and-how-the-app-will-be-delivered)
+    + [The staff's needs, working styles and patterns](#the-staffs-needs-working-styles-and-patterns)
+  * [Evaluating the factors affecting the success and failure of the new application in regards to the following](#evaluating-the-factors-affecting-the-success-and-failure-of-the-new-application-in-regards-to-the-following)
+    + [The risk associated with completion of tasks on time and within budget](#the-risk-associated-with-completion-of-tasks-on-time-and-within-budget)
+    + [Costs and time constraints](#costs-and-time-constraints)
+    + [Staff skills and the maintenance of the IOS application](#staff-skills-and-the-maintenance-of-the-ios-application)
+    + [Change of management and user involvement in the development process](#change-of-management-and-user-involvement-in-the-development-process)
+  * [Requirements specification regarding the application](#requirements-specification-regarding-the-application)
+    + [The scope and boundaries of the proposed application](#the-scope-and-boundaries-of-the-proposed-application)
+    + [The inputs, outputs and processes of the proposed system](#the-inputs-outputs-and-processes-of-the-proposed-system)
+    + [The timescales and milestones](#the-timescales-and-milestones)
+    + [The risks and constraints](#the-risks-and-constraints)
+    + [Recommendations for future action](#recommendations-for-future-action)
+      - [Geofencing + Google Maps](#geofencing--google-maps)
+      - [Preset reminders](#preset-reminders)
+  * [Emailing to request a meeting to discuss the quality of the proposed IOS application and the suitability of the original requirements.](#emailing-to-request-a-meeting-to-discuss-the-quality-of-the-proposed-ios-application-and-the-suitability-of-the-original-requirements)
+  * [Creating a questionnaire to take to the meeting to ensure that all information that is required, is gathered.](#creating-a-questionnaire-to-take-to-the-meeting-to-ensure-that-all-information-that-is-required-is-gathered)
+  * [Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.](#discussing-how-we-are-going-to-carry-out-document-analysis-and-the-protocols-that-will-be-used-for-carrying-out-the-investigation)
+- [Designing the IOS application](#designing-the-ios-application)
+  * [Producing a detailed design documentation](#producing-a-detailed-design-documentation)
+    + [Input and output requirements](#input-and-output-requirements)
+      - [Screen layouts for mobile devices and alternative layout for desktop pc](#screen-layouts-for-mobile-devices-and-alternative-layout-for-desktop-pc)
+      - [Hardware and software requirements](#hardware-and-software-requirements)
+      - [Data Flow Diagram](#data-flow-diagram)
+  * [Producing a plan for testing, maintaining and updating the desktop application](#producing-a-plan-for-testing-maintaining-and-updating-the-desktop-application)
+    + [Testing methods to be used](#testing-methods-to-be-used)
+    + [Test data boundaries in relation to normal, abnormal and extreme data](#test-data-boundaries-in-relation-to-normal-abnormal-and-extreme-data)
+    + [Proposed test schedule](#proposed-test-schedule)
+    + [Proposed maintenance and update schedule](#proposed-maintenance-and-update-schedule)
+    + [My Time management and planning](#my-time-management-and-planning)
+    + [How I used feedback from my manager](#how-i-used-feedback-from-my-manager)
+    + [Investigation techniques used for the interview](#investigation-techniques-used-for-the-interview)
+    + [How I managed the system expectations](#how-i-managed-the-system-expectations)
+    + [My behaviour and the impact on the outcomes of the system, to include professionalism, etiquette, supportive of others, timely and appropriate leadership and accountability](#my-behaviour-and-the-impact-on-the-outcomes-of-the-system-to-include-professionalism-etiquette-supportive-of-others-timely-and-appropriate-leadership-and-accountability)
+    + [Evaluating my recommendations and decisions](#evaluating-my-recommendations-and-decisions)
+
+<!-- tocstop -->
+
 # Requirements Specification
 
 ## Evaluating the computing and business needs of Rogers Reminders
@@ -144,7 +191,6 @@ Testing should be done after a new feature is added and any related features sho
 ### Proposed maintenance and update schedule
 Maintenance and updates should be done once a week to avoid stress on the user updating the application too much. Once a week is a good balance and allows time for more advanced features to be added within the week as well.
 
-%% TODO: Add test plan
 Test Number | Test Type | Target | Purpose | Test Data | Expected Result| Actual Result|
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 0 | Button | Main Form | To identify any issues with the buttons on the target | Left Mouse Click | Button to open menu associated with the button as per the specification | ??
@@ -158,15 +204,3 @@ Test Number | Test Type | Target | Purpose | Test Data | Expected Result| Actual
 8 | Button | Delete Confirmation | To identify any issues with the buttons on the target | Left Mouse Button | The buttons should either delete the reminder or preserve it as the user canceled | ??
 9 |
 
-
-### My Time management and planning
-
-### How I used feedback from my manager
-
-### Investigation techniques used for the interview
-
-### How I managed the system expectations
-
-### My behaviour and the impact on the outcomes of the system, to include professionalism, etiquette, supportive of others, timely and appropriate leadership and accountability
-
-### Evaluating my recommendations and decisions 
