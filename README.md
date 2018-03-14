@@ -132,6 +132,8 @@ These reminders would be reminders that you can set to remind you every day, eve
 I have created a questionnaire to create a feasibility overview to see if this project is worth the time and effort of the team and to see if the team has the equipment they require to complete the task and create the Rogers Reminders application.
 [Google Form](https://goo.gl/forms/fLs7G42uaT2O680n1)
 
+###Response from the questionnaire 
+
 ## Discussing how we are going to carry out document analysis and the protocols that will be used for carrying out the investigation.
 Document analysis is the process of using predefined protocols and methods to analyse a document and extract useful data from it. It allows researchers to look at preexisting documents, online or physical to determine certain factors. For Rogers Reminders a document analysis can be conducted on reviews of popular reminder applications which will allow us to extract the good and bad parts of current reminder applications in hopes to make the application better.
 
