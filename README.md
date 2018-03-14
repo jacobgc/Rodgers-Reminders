@@ -47,13 +47,6 @@
 
 ## Evaluating the computing and business needs of Rogers Reminders
 
-
-4 views, original designs (DESKTOP)
-4 views of alternate design
-1 mobile/tablet
-1 alternate design mobile/tablet
-
-
 ### The services the organisation provides
 Rogers Reminders is looking to create an application to fill a gap in the market for a decent reminder, application. Many applications do some features and then other applications do others. This app is going to encompass them all within one application. Below is a basic list of some of the features that this IOS Application will include.
 
