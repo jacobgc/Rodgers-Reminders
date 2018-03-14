@@ -37,6 +37,7 @@
     + [Test data boundaries in relation to normal, abnormal and extreme data](#test-data-boundaries-in-relation-to-normal-abnormal-and-extreme-data)
     + [Proposed test schedule](#proposed-test-schedule)
     + [Proposed maintenance and update schedule](#proposed-maintenance-and-update-schedule)
+    + [Test plan](#test-plan)
 
 <!-- tocstop -->
 
@@ -186,6 +187,7 @@ Testing should be done after a new feature is added and any related features sho
 ### Proposed maintenance and update schedule
 Maintenance and updates should be done once a week to avoid stress on the user updating the application too much. Once a week is a good balance and allows time for more advanced features to be added within the week as well.
 
+### Test plan
 Test Number | Test Type | Target | Purpose | Test Data | Expected Result| Actual Result|
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
 0 | Button | Main Form | To identify any issues with the buttons on the target | Left Mouse Click | Button to open menu associated with the button as per the specification | ??
