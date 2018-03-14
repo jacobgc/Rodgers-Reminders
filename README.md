@@ -1,6 +1,7 @@
 # Rogers Reminders Unit 22
 
 # Table of contents
+
 <!-- toc -->
 
 - [Requirements Specification](#requirements-specification)
@@ -36,12 +37,6 @@
     + [Test data boundaries in relation to normal, abnormal and extreme data](#test-data-boundaries-in-relation-to-normal-abnormal-and-extreme-data)
     + [Proposed test schedule](#proposed-test-schedule)
     + [Proposed maintenance and update schedule](#proposed-maintenance-and-update-schedule)
-    + [My Time management and planning](#my-time-management-and-planning)
-    + [How I used feedback from my manager](#how-i-used-feedback-from-my-manager)
-    + [Investigation techniques used for the interview](#investigation-techniques-used-for-the-interview)
-    + [How I managed the system expectations](#how-i-managed-the-system-expectations)
-    + [My behaviour and the impact on the outcomes of the system, to include professionalism, etiquette, supportive of others, timely and appropriate leadership and accountability](#my-behaviour-and-the-impact-on-the-outcomes-of-the-system-to-include-professionalism-etiquette-supportive-of-others-timely-and-appropriate-leadership-and-accountability)
-    + [Evaluating my recommendations and decisions](#evaluating-my-recommendations-and-decisions)
 
 <!-- tocstop -->
 
@@ -203,4 +198,3 @@ Test Number | Test Type | Target | Purpose | Test Data | Expected Result| Actual
 7 | Button | New Reminder Form | To identify any issues with the "Add Reminder" button on the target | Left Mouse Button | The form should search for errors in the users input and if there are none, create the reminder. | ??
 8 | Button | Delete Confirmation | To identify any issues with the buttons on the target | Left Mouse Button | The buttons should either delete the reminder or preserve it as the user canceled | ??
 9 |
-
