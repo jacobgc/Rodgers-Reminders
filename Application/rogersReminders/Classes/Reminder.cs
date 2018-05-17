@@ -23,4 +23,22 @@ namespace RogersReminders
     {
 
     }
+
+
+    class Person
+    {
+        public String FirstName { get; set; }
+        public String LastName { get; set; }
+        public String DateOfBirth { get; set; }
+
+    }
+
+    class Student : Person
+    {
+        public Int32 StudentNumber { get; set; }
+        public String StudentEmail { get; set; }
+        public Int32 YearOfEnrolment { get; set; }
+
+    }
+    
 }

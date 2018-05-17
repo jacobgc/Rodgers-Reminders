@@ -34,7 +34,7 @@ namespace RogersReminders.Windows
         {
             Globals.ONLINE = false; // Set global ONLINE variable to signel to the rest of the application that we are running online
             this.Hide(); // hide the current widnow
-            LoginOrRegister createOrLoadDB = new LoginOrRegister(); // Create a new instance of the LoginOrRegister window
+            CreateOrLoadDB createOrLoadDB = new CreateOrLoadDB(); // Create a new instance of the LoginOrRegister window
             createOrLoadDB.Show();  // Show the window
         }
     }

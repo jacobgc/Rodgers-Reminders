@@ -15,13 +15,13 @@ namespace RogersReminders
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            System.IO.Directory.CreateDirectory("./databases"); // Create required folder
             //Changed to show the CreateOrLoadDB form rather than the MainWindow form
-            var main_form = new Windows.OfflineOrOnline();
+            var main_form = new Windows.CreateOrLoadDB();
             main_form.Show();
             Application.Run();
 
             // Ensure there is a folder for local SQL databases
-            System.IO.Directory.CreateDirectory("./databases");
 
         }
     }

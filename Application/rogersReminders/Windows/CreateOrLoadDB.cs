@@ -54,7 +54,11 @@ namespace RogersReminders.Windows
 
         private void buttonLoadDatabase_Click(object sender, EventArgs e)
         {
-            
+            string[] Databases = Directory.GetFiles(@"./databases/");
+            foreach (var database in Databases)
+            {
+
+            }
         }
 
         private void buttonCreateDatabase_Click(object sender, EventArgs e)
