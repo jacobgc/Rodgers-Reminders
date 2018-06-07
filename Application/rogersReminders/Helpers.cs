@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace RogersRemindersFrontend
 {
-    class Helpers
+    public class Helpers
     {
         public static void AESEncrypt(string inputFile, string password)
         {
@@ -136,7 +136,7 @@ namespace RogersRemindersFrontend
             finally
             {
                 fsOut.Close();
-                fsCrypt.Close();
+               fsCrypt.Close();
             }
         }
 

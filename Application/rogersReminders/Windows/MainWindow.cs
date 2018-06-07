@@ -1,64 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SQLite;
 using System.Windows.Forms;
-
 namespace RogersReminders
 {
+
     public partial class MainWindow : Form
     {
+            string DatabaseName = "";
+
         public MainWindow()
         {
+            if (Globals.DatabaseEncryption)
+            {
+                DatabaseName = Globals.DatabaseName + ".sqlite.aes.decrypted";
+            }
+            else
+            {
+                DatabaseName = Globals.DatabaseName + ".sqlite";
+            }
             InitializeComponent();
-        }
-
-
-        class Reminder
-        {
-            public String Name { get; set; }
-            public String Description { get; set; }
-            public DateTime TimeCreated { get; set; }
 
         }
 
-        class TimedReminder : Reminder
-        {
-            public DateTime RemindTime { get; set; }
-        }
-
-        class StaticReminder : Reminder
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n Creating instance of StaticReminder";
-                StaticReminder NewStaticReminder = new StaticReminder();
-                NewStaticReminder.Name = TextBoxReminderName.Text;
-                NewStaticReminder.Description = TextBoxReminderDescription.Text;
-                NewStaticReminder.TimeCreated = DateTime.Now;
 
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n NewStaticReminder.Name: " + NewStaticReminder.Name;
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n NewStaticReminder.Description: " + NewStaticReminder.Description;
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n NewStaticReminder.TimeCreated: " + NewStaticReminder.TimeCreated;
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=./databases/" + DatabaseName + ";Version=3;");
+            m_dbConnection.Open();
 
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n Creating instance of TimedReminder";
-                TimedReminder NewTimedReminder = new TimedReminder();
-                NewTimedReminder.Name = TextBoxReminderName.Text;
-                NewTimedReminder.Description = TextBoxReminderDescription.Text;
-                NewTimedReminder.RemindTime = dateTimePickerReminder.Value;
-                NewTimedReminder.TimeCreated = DateTime.Now;
+            string sql = "INSERT INTO reminders (name, date, time) VALUES('"+ TextBoxReminderName.Text +"', '"+ dateTimePickerReminderDate.Value.ToShortDateString() +"', '"+dateTimePickerReminderTime.Value.ToShortTimeString()+"')";
 
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n NewTimedReminder.Name: " + NewTimedReminder.Name;
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n NewTimedReminder.Description: " + NewTimedReminder.Description;
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n NewTimedReminder.RemindTime: " + NewTimedReminder.RemindTime;
-                TextBoxDebug.Text = TextBoxDebug.Text + "\r\n NewTimedReminder.TimeCreated: " + NewTimedReminder.TimeCreated;
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+
+            m_dbConnection.Close();
+
+            tabControlPages.SelectTab(0);
+            updateReminders();
 
         }
 
@@ -74,6 +53,48 @@ namespace RogersReminders
         private void MainWindow_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            dateTimePickerReminderTime.Value = DateTime.Now.AddHours(1);
+            dateTimePickerReminderDate.Value = DateTime.Now;
+
+            updateReminders();
+
+        }
+
+        private void updateReminders()
+        {
+            Globals.Reminders.Clear();
+            listBoxReminders.Items.Clear();
+            MessageBox.Show("STUFF:" + Globals.Reminders.ToString());
+
+            // Load data from SQLite file specified in the GLOBALS
+            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=./databases/" + DatabaseName + ";Version=3;");
+            m_dbConnection.Open();
+
+            string sql = "SELECT * FROM 'reminders'";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+
+
+            while (reader.Read())
+                Globals.Reminders.Add(new TimedReminder(reader["name"].ToString(), DateTime.Parse(reader["date"].ToString()), DateTime.Parse(reader["time"].ToString())));
+
+            m_dbConnection.Close();
+
+
+            foreach (var Reminder in Globals.Reminders)
+            {
+                listBoxReminders.Items.Add(Reminder.Name + " : " + Reminder.RemindDate.ToShortDateString() + " : " + Reminder.RemindTime.ToShortTimeString());
+            }
+
+        }
+
+        private void tabPageAddReminder_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

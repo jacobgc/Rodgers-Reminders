@@ -1,15 +1,11 @@
 ﻿using RogersRemindersFrontend;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
+
 
 namespace RogersReminders.Windows
 {
@@ -23,11 +19,12 @@ namespace RogersReminders.Windows
         private void lookForDatabases() // Add to method so it can be called when a database is created
         {
             comboBoxLoadDatabase.Items.Clear(); // Remove any existing items
-            string[] Databases = Directory.GetFiles(@"./databases/", "*.sqlite"); // Create an array of all files ending in .sqlite within the databases folder
+            string[] Databases = Directory.GetFiles(@"./databases/", "*.sqlite*"); // Create an array of all files ending in .sqlite within the databases folder
             foreach (string DataBaseName in Databases) // For every result
             {
                 String TempName = DataBaseName.Replace("./databases/", string.Empty); // Remove the folder from the name
                 TempName = TempName.Replace(".sqlite", string.Empty); // Remove the file extension from the name
+                TempName = TempName.Replace(".aes", " (Encrypted)"); // Remove the file extension from the name
                 comboBoxLoadDatabase.Items.Add(TempName); // Add the result to the comboBox
                 comboBoxLoadDatabase.SelectedIndex = 0; // Select the first index of the comboBox (Cant be done out of the for loop due to exception if no results are returned)
             }
@@ -54,10 +51,43 @@ namespace RogersReminders.Windows
 
         private void buttonLoadDatabase_Click(object sender, EventArgs e)
         {
-            string[] Databases = Directory.GetFiles(@"./databases/");
-            foreach (var database in Databases)
+            string selectedDatabase = comboBoxLoadDatabase.Text;
+            try
             {
+                if (textBoxLoadPassword.Text != string.Empty)
+                {
+                    try
+                    {
+                        string tempName = comboBoxLoadDatabase.Text.Replace(" (Encrypted)", string.Empty);
+                        Helpers.AESDecrypt("./databases/" + tempName + ".sqlite.aes", textBoxLoadPassword.Text);
+                        Globals.DatabasePassword = textBoxLoadPassword.Text;
+                        Globals.DatabaseName = tempName;
+                        Globals.DatabaseEncryption = true;
+                        MainWindow mainWindow = new MainWindow();
+                        mainWindow.Show();
+                        this.Hide();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Password incorrect or database missing.");
+                    }
+                    // If password provided attempt to decrypt the database
+                    File.Delete("./databases/" + textBoxCreateName.Text + ".sqlite");
+                }
+                else
+                {
+                    // No password provided so don't attempt to decrypt.
+                    Globals.DatabaseName = comboBoxLoadDatabase.Text;
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    this.Hide();
 
+                }
+            }
+            catch (Exception thrown)
+            {
+                Console.WriteLine(thrown.InnerException);
+                throw;
             }
         }
 
@@ -85,6 +115,16 @@ namespace RogersReminders.Windows
             else
             {
                 SQLiteConnection.CreateFile("./databases/" + textBoxCreateName.Text + ".sqlite"); // Use the SQLiteConnection to create the sqlite file
+
+                SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=./databases/"+textBoxCreateName.Text+".sqlite;Version=3;");
+                m_dbConnection.Open();
+
+                string sql = "create table reminders (name varchar(255), date varchar(255), time varchar(255))";
+
+                SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+                command.ExecuteNonQuery();
+
+                m_dbConnection.Close();
 
                 labelErrorCreation.ForeColor = Color.Green; // Show success message
                 labelErrorCreation.Visible = true;
