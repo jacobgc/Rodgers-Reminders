@@ -6,7 +6,7 @@ namespace RogersReminders
 
     public partial class MainWindow : Form
     {
-            string DatabaseName = "";
+        string DatabaseName = "";
 
         public MainWindow()
         {
@@ -68,7 +68,6 @@ namespace RogersReminders
         {
             Globals.Reminders.Clear();
             listBoxReminders.Items.Clear();
-            MessageBox.Show("STUFF:" + Globals.Reminders.ToString());
 
             // Load data from SQLite file specified in the GLOBALS
             SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=./databases/" + DatabaseName + ";Version=3;");
