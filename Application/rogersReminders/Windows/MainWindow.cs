@@ -26,19 +26,22 @@ namespace RogersReminders
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=./databases/" + DatabaseName + ";Version=3;");
-            m_dbConnection.Open();
+            if(TextBoxReminderName.Text != string.empty){
+                SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=./databases/" + DatabaseName + ";Version=3;");
+                m_dbConnection.Open();
 
-            string sql = "INSERT INTO reminders (name, date, time) VALUES('"+ TextBoxReminderName.Text +"', '"+ dateTimePickerReminderDate.Value.ToShortDateString() +"', '"+dateTimePickerReminderTime.Value.ToShortTimeString()+"')";
+                string sql = "INSERT INTO reminders (name, date, time) VALUES('"+ TextBoxReminderName.Text +"', '"+ dateTimePickerReminderDate.Value.ToShortDateString() +"', '"+dateTimePickerReminderTime.Value.ToShortTimeString()+"')";
 
-            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
-            command.ExecuteNonQuery();
+                SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+                command.ExecuteNonQuery();
 
-            m_dbConnection.Close();
+                m_dbConnection.Close();
 
-            tabControlPages.SelectTab(0);
-            updateReminders();
-
+                tabControlPages.SelectTab(0);
+                updateReminders();
+            }else{
+                MessageBox.Show("Please enter a name for your reminder");
+            }
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
